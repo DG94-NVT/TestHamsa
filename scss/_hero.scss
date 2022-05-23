@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+  &__img {
+    img {
+      width: 100%;
+      height: 768px;
+    }
+  }
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  &__title {
+    max-width: 312px;
+    color: $text-light;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin: 0 auto 3rem;
+  }
+  &__action {
+  }
+  &__btn {
+    font-size: 1.3rem;
+    padding: 2rem 10rem;
+    color: $text-light;
+    border: 1px solid #ffff;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero__title {
+    max-width: 204px;
+    font-size: 1.9rem;
+  }
+}

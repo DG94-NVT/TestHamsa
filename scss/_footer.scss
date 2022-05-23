@@ -1,0 +1,38 @@
+.footer {
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3.7rem;
+    padding: 2.1rem 0;
+    border-bottom: 1px solid #d3d2d2;
+  }
+  &__item {
+    a {
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $text-color;
+    }
+  }
+  &__bottom {
+    padding: 2.5rem 0 4.5rem;
+    text-align: center;
+  }
+  &__logo {
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__menu {
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+
+  .footer__bottom {
+    padding: 3rem 0;
+  }
+}
