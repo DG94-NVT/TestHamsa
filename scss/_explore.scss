@@ -23,5 +23,9 @@
     color: $text-color;
     padding: 1.3rem;
     border: 1px solid $text-color;
+    &:hover {
+      background-color: $text-color;
+      color: $text-light;
+    }
   }
 }

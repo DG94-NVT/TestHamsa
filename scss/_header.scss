@@ -42,6 +42,9 @@
     background: none;
     border: 0;
   }
+  &__bar {
+    display: none;
+  }
   &__search {
   }
   &__wishlist {
@@ -64,13 +67,20 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .header__container {
     padding: 2rem 0;
   }
   .header__menu {
     display: none;
   }
+
+  .header__bar {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1023px) {
   .hide-mobile {
     display: none;
   }
